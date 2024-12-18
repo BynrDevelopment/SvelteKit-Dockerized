@@ -36,7 +36,7 @@ Hauptfunktionen:
 * Docker und Docker Compose (Plugin) auf deinem System installiert.
 * Grundkenntnisse über Docker und Container.
 
-### Installation
+### Installation des Webservers
 
 1. Klone das Repository:
    ```bash
@@ -46,8 +46,12 @@ Hauptfunktionen:
    ```bash
    cd SvelteKit-Docker
    ```
-3. **Erstelle einen `./data`-Ordner und lege deinen App-Quellcode hinein.**
-4. Baue und starte den Docker-Container:
+3. Aufbau des Projekts mit Hilfe von NodeJS:
+   ```bash
+   npm ci && npm run build
+   ```
+4. **Erstelle einen `./data`-Ordner und lege deinen App-Quellcode hinein.**
+5. Baue und starte den Docker-Container:
    ```bash
    docker compose up -d
    ```
@@ -55,7 +59,7 @@ Hauptfunktionen:
 
 ## Nutzung
 
-Nachdem der Container gestartet ist, ist deine SvelteKit-App unter 🔗 http://127.0.0.1:3000/ erreichbar.
+Nachdem der Container gestartet ist, ist deine SvelteKit-App unter 🔗 http://127.0.0.1:3000/ erreichbar. Der Entwicklungsserver kann wie gewohnt von Svelte aus mit `npm run dev` gestartet werden.
 
 ## Danksagungen
 
